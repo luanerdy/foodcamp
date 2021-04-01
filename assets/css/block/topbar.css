@@ -1,0 +1,22 @@
+.topbar {
+    height: 92px;
+    width: 100%;
+    max-width: 650px;
+
+    position: fixed;
+    top: 0;
+    padding: 18px 21px;
+
+    background: #cf2b2b;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    color: white;
+}
+
+.topbar h1 {
+    font-size: 44px;
+}
+
+.topbar p {
+    font-size: 18px;
+}

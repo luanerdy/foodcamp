@@ -1,0 +1,29 @@
+body, .content {
+    height: 100vh;
+    width: 100%;
+}
+
+.content {
+    margin: 0 auto;
+    max-width: 650px;
+    background: #e5e5e5;
+    font-family: 'Roboto';
+    user-select: none;
+}
+
+.page-wall {
+    width: 100%;
+    max-width: 650px;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.9);
+    position: fixed;
+    z-index: 100;
+}
+
+.hidden {
+    display: none;
+}
+
+.title {
+    font-family: 'Righteous';
+}
