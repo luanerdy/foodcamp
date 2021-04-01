@@ -20,6 +20,8 @@ function select(event) {
 
         event.currentTarget.classList.add('selected');
     }
+
+    verify()
 }
 
 for(let i = 0; i < food.length; i++) {
