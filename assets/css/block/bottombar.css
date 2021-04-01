@@ -19,6 +19,9 @@
     width: 88%;
     max-width: 400px;
     border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .bottombar button p:first-child, .bottombar .blocked p:last-child {
@@ -27,6 +30,8 @@
 
 .bottombar .blocked p:first-child {
     display: block;
+    font-size: 20px;
+    width: 200px;
 }
 
 .bottombar button p:last-child {

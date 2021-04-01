@@ -1,14 +1,16 @@
-body, .content {
+body {
     height: 100vh;
     width: 100%;
 }
 
 .content {
+    width: 100%;
     margin: 0 auto;
     max-width: 650px;
     background: #e5e5e5;
     font-family: 'Roboto';
     user-select: none;
+    padding: 125px 0 85px 0;
 }
 
 .page-wall {
