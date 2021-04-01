@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="icon" href="assets/images/favicon.png">
     <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/global.css">
     <link rel="stylesheet" href="assets/css/block/confirm.css">
     <link rel="stylesheet" href="assets/css/block/topbar.css">
     <link rel="stylesheet" href="assets/css/block/menu.css">
     <link rel="stylesheet" href="assets/css/block/bottombar.css">
+    <link rel="stylesheet" href="assets/css/block/item-images.css">
+    <link rel="stylesheet" href="assets/css/global.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
@@ -24,8 +25,8 @@
             <p>Sua comida em 6 minutos</p>
         </header>
 
-        <div class="page-wall"></div>
-        <div class="confirmation">
+        <div class="page-wall hidden"></div>
+        <div class="confirmation hidden">
             <p>Confirme seu pedido</p>
             <div id="food">
                 <p>food name</p>
@@ -51,72 +52,100 @@
             <p class="title">Primeiro, seu prato</p>
             <div class="options">
                 <div>
-                    <img src="assets/images/food/frango_yin_yang.png" alt="Frango Yin Yang">
+                    <div class="item-image" id="penne-strogonoff"></div>
+                    <p>Penne com Strogonoff</p>
+                    <p>Estrogonofe de carne com macarrão penne</p>
+                    <p>R$ 18,50</p>
+                    <ion-icon name="checkmark-circle-sharp"></ion-icon>
+                </div>
+                <div>
+                    <div class="item-image" id="frango-yin-yang"></div>
                     <p>Frango Yin Yang</p>
                     <p>Um pouco de batata, um pouco de salada</p>
                     <p>R$ 14,90</p>
                     <ion-icon name="checkmark-circle-sharp"></ion-icon>
                 </div>
                 <div>
-                    <img src="assets/images/food/frango_yin_yang.png" alt="Frango Yin Yang">
-                    <p>Frango Yin Yang</p>
-                    <p>Um pouco de batata, um pouco de salada</p>
-                    <p>R$ 14,90</p>
+                    <div class="item-image" id="trad-fitness"></div>
+                    <p>Tradicional Fitness</p>
+                    <p>Salada, arroz, feijão, frango e purê</p>
+                    <p>R$ 14,00</p>
                     <ion-icon name="checkmark-circle-sharp"></ion-icon>
                 </div>
                 <div>
-                    <img src="assets/images/food/frango_yin_yang.png" alt="Frango Yin Yang">
-                    <p>Frango Yin Yang</p>
-                    <p>Um pouco de batata, um pouco de salada</p>
-                    <p>R$ 14,90</p>
+                    <div class="item-image" id="lasanha"></div>
+                    <p>Lasanha</p>
+                    <p>Massa, queijo, carne moída e presunto</p>
+                    <p>R$ 13,80</p>
+                    <ion-icon name="checkmark-circle-sharp"></ion-icon>
+                </div>
+                <div>
+                    <div class="item-image" id="panqueca"></div>
+                    <p>Panqueca de carne</p>
+                    <p>Arro branco e panqueca de carne</p>
+                    <p>R$ 15,50</p>
                     <ion-icon name="checkmark-circle-sharp"></ion-icon>
                 </div>
             </div>
             <p class="title">Agora, sua bebida</p>
             <div class="options">
                 <div>
-                    <img src="assets/images/food/frango_yin_yang.png" alt="Frango Yin Yang">
-                    <p>Frango Yin Yang</p>
-                    <p>Um pouco de batata, um pouco de salada</p>
-                    <p>R$ 14,90</p>
+                    <div class="item-image" id="refri-lata"></div>
+                    <p>Refrigerante lata</p>
+                    <p>Refri lata 350ml geladinho</p>
+                    <p>R$ 4,90</p>
                     <ion-icon name="checkmark-circle-sharp"></ion-icon>
                 </div>
                 <div>
-                    <img src="assets/images/food/frango_yin_yang.png" alt="Frango Yin Yang">
-                    <p>Frango Yin Yang</p>
-                    <p>Um pouco de batata, um pouco de salada</p>
-                    <p>R$ 14,90</p>
+                    <div class="item-image" id="refri-litro"></div>
+                    <p>Refrigerante 1 litro</p>
+                    <p>1 Litro de refri</p>
+                    <p>R$ 8,90</p>
                     <ion-icon name="checkmark-circle-sharp"></ion-icon>
                 </div>
                 <div>
-                    <img src="assets/images/food/frango_yin_yang.png" alt="Frango Yin Yang">
-                    <p>Frango Yin Yang</p>
-                    <p>Um pouco de batata, um pouco de salada</p>
-                    <p>R$ 14,90</p>
+                    <div class="item-image" id="milk-shake"></div>
+                    <p>Milk shake</p>
+                    <p>Milk shake gostoso e nutritivo</p>
+                    <p>R$ 12,50</p>
+                    <ion-icon name="checkmark-circle-sharp"></ion-icon>
+                </div>
+                <div>
+                    <div class="item-image" id="laranja"></div>
+                    <p>Suco de laranja</p>
+                    <p>Suco natural da fruta</p>
+                    <p>R$ 7,90</p>
                     <ion-icon name="checkmark-circle-sharp"></ion-icon>
                 </div>
             </div>
             <p class="title">Por fim, sua sobremesa</p>
             <div class="options">
                 <div>
-                    <img src="assets/images/food/frango_yin_yang.png" alt="Frango Yin Yang">
-                    <p>Frango Yin Yang</p>
-                    <p>Um pouco de batata, um pouco de salada</p>
-                    <p>R$ 14,90</p>
+                    <div class="item-image" id="pudim"></div>
+                    <p>Pudim</p>
+                    <p>Apenas pudim</p>
+                    <p>R$ 7,90</p>
                     <ion-icon name="checkmark-circle-sharp"></ion-icon>
                 </div>
                 <div>
-                    <img src="assets/images/food/frango_yin_yang.png" alt="Frango Yin Yang">
-                    <p>Frango Yin Yang</p>
-                    <p>Um pouco de batata, um pouco de salada</p>
-                    <p>R$ 14,90</p>
+                    <div class="item-image" id="pave"></div>
+                    <p>Pavê de chocolate</p>
+                    <p>É pavê ou pacumê?</p>
+                    <p>R$ 9,90</p>
                     <ion-icon name="checkmark-circle-sharp"></ion-icon>
                 </div>
                 <div>
-                    <img src="assets/images/food/frango_yin_yang.png" alt="Frango Yin Yang">
-                    <p>Frango Yin Yang</p>
-                    <p>Um pouco de batata, um pouco de salada</p>
-                    <p>R$ 14,90</p>
+                    <div class="item-image" id="torta"></div>
+                    <p>Torta de limão</p>
+                    <p>Torta cremosa e deliciosa</p>
+                    <p>R$ 8,50</p>
+                    <ion-icon name="checkmark-circle-sharp"></ion-icon>
+                </div>
+                <div>
+                    <div class="item-image" id="petit"></div>
+                    <p>Petit gateau</p>
+                    <p>Bolinho com sorvete gourmet</p>
+                    <p>R$ 12,90</p>
                     <ion-icon name="checkmark-circle-sharp"></ion-icon>
                 </div>
             </div>
