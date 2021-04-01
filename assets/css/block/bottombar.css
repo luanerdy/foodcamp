@@ -11,6 +11,7 @@
 
     background: white;
     color: white;
+    z-index: 50;
 }
 
 .bottombar button {
@@ -22,6 +23,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.bottombar .blocked {
+    background: #cbcbcb;
 }
 
 .bottombar button p:first-child, .bottombar .blocked p:last-child {

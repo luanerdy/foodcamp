@@ -31,6 +31,12 @@
     flex-flow: column nowrap;
     align-items: center;
     justify-content: space-between;
+    position: relative;
+    cursor: pointer;
+}
+
+.options .selected {
+    border: 5px solid #32b72f;
 }
 
 .options > div > * {
@@ -58,4 +64,18 @@
 .options > div > p:nth-of-type(3){
     font-size: 16px;
     margin-bottom: 13px;
+}
+
+.options ion-icon {
+    position: absolute;
+    right: 13px;
+    bottom: 16px;
+    font-size: 16px;
+    width: 16px;
+    color: #32b72f;
+    display: none;
+}
+
+.options > .selected ion-icon{
+    display: inline-block;
 }

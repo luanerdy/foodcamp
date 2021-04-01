@@ -17,6 +17,8 @@ body {
     width: 100%;
     max-width: 650px;
     height: 100vh;
+    top: 0;
+    bottom: 0;
     background: rgba(255, 255, 255, 0.9);
     position: fixed;
     z-index: 100;
