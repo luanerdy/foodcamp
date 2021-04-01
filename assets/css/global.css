@@ -31,3 +31,7 @@ body {
 .title {
     font-family: 'Righteous';
 }
+
+button {
+    cursor: pointer;
+}
